@@ -1,5 +1,5 @@
 const data = {
-    'en': { title: "Kurobe Dam Guide", text: "Kurobe Dam is Japan's tallest dam, standing at 186 meters.", audio: "assets/audio/en.mp3" },
+    'en': { title: "Kurobe Dam Guide", text: "Kurobe Dam is Japan's tallest dam, standing at 186 meters.", audio: "assets/audio/kurobe_en.mp3" },
     'zh': { title: "黑部水坝指南", text: "黑部水坝是日本最高的水坝，高度为186米。", audio: "assets/audio/kurobe_zh.mp3" },
     'tw': { title: "黑部水壩指南", text: "黑部水壩是日本最高的水壩，高度為186公尺。", audio: "assets/audio/kurobe_tw.mp3" },
     'ko': { title: "쿠로베 댐 안내", text: "쿠로베 댐은 높이 186m로 일본에서 가장 높은 댐입니다.", audio: "assets/audio/kurobe_ko.mp3" },
@@ -27,3 +27,4 @@ function selectLang(lang) {
 document.getElementById('play-btn').onclick = function() {
     currentAudio.play();
 };
+
