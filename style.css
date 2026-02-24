@@ -6,6 +6,12 @@ body {
     margin: 0;
     padding: 20px;
 }
+/* タイトルの色を変更 */
+h1 {
+    color: #0c6ca0; /* ここを好きな色に変えてください（例：#007bffは青） */
+    font-size: 1.8rem; /* タイトルの大きさもここで調整できます */
+    margin-bottom: 10px;
+}
 
 #app {
     max-width: 400px;
@@ -32,6 +38,7 @@ body {
 }
 /* style.css に追加してください */
 #guide-text {
+　　font-size: 0.9rem;
     white-space: pre-wrap; /* これを入れると script.js 内の改行が反映されます */
     text-align: left;      /* 説明文は左寄せの方が見やすいです */
     line-height: 1.6;     /* 行の間隔を少し広げます */
@@ -77,3 +84,4 @@ body {
 #stop-btn:active {
     background-color: #5a6268;
 }
+
