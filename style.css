@@ -1,0 +1,42 @@
+/* これを style.css に貼り付けてください */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+#app {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ★ここで国旗のサイズを指定しています */
+.flags img {
+    width: 100px;    /* 幅を100ピクセルに固定 */
+    height: auto;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+#guide-area {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+#play-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
