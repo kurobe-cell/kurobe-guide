@@ -9,12 +9,12 @@ body {
 /* タイトルの色を変更 */
 h1 {
     color: #0c6ca0; /* ここを好きな色に変えてください（例：#007bffは青） */
-    font-size: 1.8rem; /* タイトルの大きさもここで調整できます */
+    font-size: 1.9rem; /* タイトルの大きさもここで調整できます */
     margin-bottom: 10px;
 }
 .sub-title {
-    color: #555;      /* 少し薄いグレー */
-    font-size: 1.2rem; /* メインタイトルより一回り小さく */
+    color: #0c6ca0;      /* 少し薄いグレー */
+    font-size: 1.1rem; /* メインタイトルより一回り小さく */
     margin-top: 5px;
 }
 
@@ -90,5 +90,6 @@ h1 {
 #stop-btn:active {
     background-color: #5a6268;
 }
+
 
 
