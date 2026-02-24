@@ -18,7 +18,7 @@ function selectLang(lang) {
         document.getElementById('guide-text').innerText = info.text;
         currentAudio.src = info.audio;
         document.getElementById('guide-area').style.display = 'block';
-        // 言語を切り替えたら一度音声を止める処理
+        
         currentAudio.pause();
         currentAudio.currentTime = 0;
     }
