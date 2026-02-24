@@ -75,7 +75,7 @@ Please come to the photo counter for pickup
 ช่างภาพมืออาชีพจะแนะนำมุมถ่ายภาพที่ดีที่สุดให้
 
 ภาพจะเสร็จภายในประมาณ 30 วินาที
-กรุณามารับภาพที่เคาน์เตอร์รับภาพ
+กรุณามารับภาพที่เคาน์เตอร์รับภาพ”
 , audio: "assets/audio/kurobe_th.mp3" },
     'id': { title: "Informasi Layanan Foto", text: "Di Observatorium Bendungan Kurobe,
 untuk memperingati pendakian 220 anak tangga,
@@ -145,6 +145,7 @@ function selectLang(lang) {
 document.getElementById('play-btn').onclick = function() {
     currentAudio.play();
 };
+
 
 
 
