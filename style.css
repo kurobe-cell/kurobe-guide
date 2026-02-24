@@ -1,10 +1,12 @@
 /* これを style.css に貼り付けてください */
 body {
-    font-family: sans-serif;
+    /* 簡体字(SC)を優先し、次に汎用的なサンセリフ体を指定します */
+    font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "Noto Sans SC", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #f4f7f6;
     margin: 0;
     padding: 20px;
+    -webkit-font-smoothing: antialiased; /* 文字の縁を滑らかにする設定 */
 }
 /* タイトルの色を変更 */
 h1 {
@@ -49,11 +51,14 @@ p {
 }
 /* style.css に追加してください */
 #guide-text {
-　　color: #333333;
-    font-size: 0.8rem;
-    white-space: pre-wrap; /* これを入れると script.js 内の改行が反映されます */
-    text-align: left;      /* 説明文は左寄せの方が見やすいです */
-    line-height: 1.6;     /* 行の間隔を少し広げます */
+    font-family: inherit; /* bodyの設定を引き継ぐ */
+    font-size: 0.7rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    text-align: left;
+    padding: 15px;
+    color: #333;
+}
 }
 
 #play-btn {
@@ -96,6 +101,7 @@ p {
 #stop-btn:active {
     background-color: #5a6268;
 }
+
 
 
 
