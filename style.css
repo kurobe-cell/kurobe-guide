@@ -30,6 +30,12 @@ body {
     padding: 15px;
     border-top: 1px solid #eee;
 }
+/* style.css に追加してください */
+#guide-text {
+    white-space: pre-wrap; /* これを入れると script.js 内の改行が反映されます */
+    text-align: left;      /* 説明文は左寄せの方が見やすいです */
+    line-height: 1.6;     /* 行の間隔を少し広げます */
+}
 
 #play-btn {
     padding: 10px 20px;
@@ -39,4 +45,5 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
 }
