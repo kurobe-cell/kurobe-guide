@@ -62,20 +62,18 @@ document.getElementById('play-btn').onclick = function() {
 };
 /* script.js の一番下（既存のコードと差し替え） */
 
-// ページが完全に読み込まれてからボタンの設定を行う
-window.onload = function() {
-    // 再生ボタン
-    document.getElementById('play-btn').onclick = function() {
-        currentAudio.play();
-    };
-
-    // 停止ボタン
-    const stopBtn = document.getElementById('stop-btn');
-    if (stopBtn) {
-        stopBtn.onclick = function() {
-            currentAudio.pause();
-            currentAudio.currentTime = 0;
-        };
-    }
+// 再生ボタンの動作
+document.getElementById('play-btn').onclick = function() {
+    currentAudio.play();
 };
+
+// 停止ボタンの動作
+const stopButton = document.getElementById('stop-btn');
+if (stopButton) {
+    stopButton.onclick = function() {
+        currentAudio.pause();      // 音を一時停止する
+        currentAudio.currentTime = 0; // 再生位置を最初に戻す
+    };
+}
+
 
