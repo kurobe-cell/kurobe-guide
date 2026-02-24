@@ -1,7 +1,7 @@
 const data = {
     'en': { 
         title: "Photo Service Information", 
-        text: "At the Kurobe Dam Observatory, to celebrate your climb of the 220 steps, we offer one complimentary photo per group, taken by a professional photographer.\n\nIf you like the photo, additional souvenir photos are available for purchase. Purchasing is completely optional. No purchase is required.\n\nThe commemorative photo is free of charge, so please feel free to participate.\n\nPlease wait in line, and we will guide you in order. Our professional photographer will assist you to the best angle.\n\nYour photo will be ready in about 30 seconds. Please come to the photo counter for pickup", 
+        text: "At the Kurobe Dam Observatory, to celebrate your climb of the 220 steps, we offer one complimentary photo per group, taken by a professional photographer.\n\nIf you like the photo, additional souvenir photos are available for purchase. Purchasing is completely optional. No purchase is required.\n\nThe commemorative photo is free of charge, so please feel free to participate.\n\nPlease wait in line, and we will guide you in order. Our professional photographer will assist you to the best angle.\n\nYour photo will be ready in about 30 seconds. Please come to the photo counter for pickup.", 
         audio: "assets/audio/kurobe_en.mp3" 
     },
     'zh': { 
@@ -31,7 +31,7 @@ const data = {
     },
     'vi': { 
         title: "Thông Tin Dịch Vụ Chụp Ảnh", 
-        text: "Tại đài quan sát Đập Kurobe, để kỷ niệm việc chinh phục 220 bậc thang, chúng tôi tặng mỗi nhóm một bức ảnh miễn phí do nhiếp ảnh gia chuyên nghiệp chụp.\n\nNếu bạn thích, bạn có thể mua thêm ảnh lưu niệm. Việc mua là hoàn toàn tự nguyện, không bắt buộc.\n\nẢnh kỷ niệm được tặng miễn phí, xin vui lòng tham gia thoải mái.\n\nVui lòng xếp hàng chờ, chúng tôi sẽ hướng dẫn theo thứ tự. Nhiếp ảnh gia chuyên nghiệp sẽ hỗ trợ góc chụp đẹp nhất.\n\nẢnh sẽ hoàn thành trong khoảng 30 giây. Vui lòng đến quầy nhận ảnh.", 
+        text: "Tại đài quan sát Đập Kurobe, để kỷ niệm việc chinh phục 220 bậc thang, chúng tôi tặng mỗi nhóm một bức ảnh miễn phí do nhiếp ảnh gia chuyên nghiệp chụp.\n\nNếu bạn thích, bạn có thể mua thêm ảnh lưu niệm. Việc mua là hoàn toàn tự nguyện, không bắt buộc.\n\nẢnh kỷ niệm được tặng miễn phí, xin vui lòng tham gia thoải mái.\n\nVui lòng xếp hàng chờ, chúng tôi akan hướng dẫn theo thứ tự. Nhiếp ảnh gia chuyên nghiệp sẽ hỗ trợ góc chụp đẹp nhất.\n\nẢnh sẽ hoàn thành trong khoảng 30 giây. Vui lòng đến quầy nhận ảnh.", 
         audio: "assets/audio/kurobe_vi.mp3" 
     },
     'ms': { 
@@ -47,7 +47,7 @@ function selectLang(lang) {
     const info = data[lang];
     if (info) {
         document.getElementById('guide-title').innerText = info.title;
-        // 改行コード \n をブラウザで表示できる形式に変換
+        // 説明文を表示（改行コードを反映させるため white-space 指定を後で CSS に追加するとより綺麗です）
         document.getElementById('guide-text').innerText = info.text;
         currentAudio.src = info.audio;
         document.getElementById('guide-area').style.display = 'block';
