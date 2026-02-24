@@ -60,3 +60,8 @@ function selectLang(lang) {
 document.getElementById('play-btn').onclick = function() {
     currentAudio.play();
 };
+// 停止ボタンの動作
+document.getElementById('stop-btn').onclick = function() {
+    currentAudio.pause();      // 音を一時停止する
+    currentAudio.currentTime = 0; // 再生位置を最初（0秒）に戻す
+};
