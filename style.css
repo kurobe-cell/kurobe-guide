@@ -47,3 +47,33 @@ body {
     cursor: pointer;
 
 }
+/* 再生ボタンと停止ボタンの共通デザイン */
+#play-btn, #stop-btn {
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s; /* 色の変化を滑らかに */
+}
+
+/* 再生ボタンの色（青） */
+#play-btn {
+    background-color: #007bff;
+}
+
+#play-btn:active {
+    background-color: #0056b3;
+}
+
+/* 停止ボタンの色（グレー、または赤など） */
+#stop-btn {
+    background-color: #6c757d; /* ここを好きな色に変えられます */
+    margin-left: 10px;         /* ボタン同士の隙間 */
+}
+
+#stop-btn:active {
+    background-color: #5a6268;
+}
