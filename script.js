@@ -60,8 +60,22 @@ function selectLang(lang) {
 document.getElementById('play-btn').onclick = function() {
     currentAudio.play();
 };
-// 停止ボタンの動作
-document.getElementById('stop-btn').onclick = function() {
-    currentAudio.pause();      // 音を一時停止する
-    currentAudio.currentTime = 0; // 再生位置を最初（0秒）に戻す
+/* script.js の一番下（既存のコードと差し替え） */
+
+// ページが完全に読み込まれてからボタンの設定を行う
+window.onload = function() {
+    // 再生ボタン
+    document.getElementById('play-btn').onclick = function() {
+        currentAudio.play();
+    };
+
+    // 停止ボタン
+    const stopBtn = document.getElementById('stop-btn');
+    if (stopBtn) {
+        stopBtn.onclick = function() {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        };
+    }
 };
+
