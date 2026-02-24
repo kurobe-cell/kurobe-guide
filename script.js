@@ -76,4 +76,38 @@ if (stopButton) {
     };
 }
 
+/* script.js の一番下あたりに追加 */
+
+const progressBar = document.getElementById('progress-bar');
+
+// 音声の再生中に実行されるイベント
+currentAudio.ontimeupdate = function() {
+    if (currentAudio.duration) {
+        // (現在の再生時間 ÷ 全体の時間) × 100 でパーセントを計算
+        const progress = (currentAudio.currentTime / currentAudio.duration) * 100;
+        progressBar.style.width = progress + "%";
+    }
+};
+
+// 停止ボタンを押した時にバーもリセットする
+document.getElementById('stop-btn').onclick = function() {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    progressBar.style.width = "0%"; // バーを0に戻す
+};
+
+// 言語を切り替えた時もバーをリセット（selectLang関数の中に追記）
+function selectLang(lang) {
+    const info = data[lang];
+    if (info) {
+        document.getElementById('guide-title').innerText = info.title;
+        document.getElementById('guide-text').innerText = info.text;
+        currentAudio.src = info.audio;
+        document.getElementById('guide-area').style.display = 'block';
+        
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        progressBar.style.width = "0%"; // バーをリセット
+    }
+}
 
